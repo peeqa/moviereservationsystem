@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../assets/popcorn.png",
+        "name": "popcorn"
+    },
+    {
+        "image": "../assets/ticket.png",
+        "name": "ticket"
+    },
+    {
+        "image": "../assets/cup.png",
+        "name": "cup"
+    },
+    {
+        "image": "../assets/clapperboard.png",
+        "name": "clapperboard"
+    },
+    {
+        "image": "../assets/trophy.png",
+        "name": "trophy"
+    },
+    {
+        "image": "../assets/drama.png",
+        "name": "drama"
+    },
+    {
+        "image": "../assets/3dglasses.png",
+        "name": "3dglasses"
+    },
+    {
+        "image": "../assets/star.png",
+        "name": "star"
+    },
+    {
+        "image": "../assets/foldedseat.png",
+        "name": "foldedseat"
+    }
+]
