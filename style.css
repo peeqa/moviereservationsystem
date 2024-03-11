@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;500&family=Lexend:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: Lexend;
+  color: #fff;
+}
+
+body {
+  background-size: cover;
+  background: linear-gradient(#000000, #000b3d);
+}
+
+.navbar{
+  background: none;
+  z-index: 1;
+  width: 90%;
+  padding: 0px 100px;
+  box-sizing: border-box;
+  position:fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-list ul li{
+  margin-left: 50px;
+}
+
+.navbar-list ul li a{
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+.navbar-list ul li button{
+  background: linear-gradient(112.82deg, rgb(62, 114, 245) 19.93%, rgb(101, 153, 235) 102.22%);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: .4s ease;
+  text-transform: uppercase;
+}
+
+.navbar-list ul li button:hover{
+  transform: translateY(-5px);
+}
+
+.scroll{
+  background: black;
+  top: -100px;
+  border-radius: 20px;
+  width: 90%;
+  animation: fadedown .4s ease 1s forwards;
+}
+
+@keyframes fadedown{
+  0%{
+      top: -100px;
+  }
+  100%{
+      top: 20px;
+  }
+}
+
+.navbar-brand{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(73, 131, 255);
+}
+
+.header{
+  text-align: center;
+  background-color: black;
+  height: 70px;
+}
+
+.score p {
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.actions button {
+    padding: 8px 16px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #002b87;
+    color: white;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+  width: 100px;
+  height: 130px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  background-image:url(images/cardback.png);
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(180deg);
+}
+
+.icons table{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.icons td{
+  padding: 20px;
+  text-align: center;
+}
+
+i{
+  color: #f3f3f3;
+  font-size: larger;
+}
+
+p{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+footer{
+  background-color: #000000;
+  height: 400px;
+}
+
+footer td p{
+  font-size: 97%;
+}

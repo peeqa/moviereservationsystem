@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend;
+  }
+
+  body {
+    background-size: cover;
+    background: linear-gradient(#000000, #000b3d);
+  }
+
+  .header{
+    text-align: center;
+    background-color: black;
+    height: 70px;
+}
+
+.navbar{
+    background: none;
+    z-index: 1;
+    width: 90%;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    position:fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-list ul li{
+    margin-left: 50px;
+}
+
+.navbar-list ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.navbar-list ul li button{
+    background: linear-gradient(112.82deg, rgb(62, 114, 245) 19.93%, rgb(101, 153, 235) 102.22%);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-transform: uppercase;
+}
+
+.navbar-list ul li button:hover{
+    transform: translateY(-5px);
+}
+
+.scroll{
+    background: black;
+    top: -100px;
+    border-radius: 20px;
+    width: 90%;
+    animation: fadedown .4s ease 1s forwards;
+}
+
+@keyframes fadedown{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+.navbar-brand{
+    cursor: pointer;
+}
+
+.navbar-brand img{
+  padding-top: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+  h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: left;
+    text-decoration: underline;
+    padding: 40px 0px 15px 50px;
+  }
+
+.table{
+  text-align: center;
+  padding: 15px;
+  color: white;
+ }
+
+.resit table, .resit th, .resit tr, .resit td{
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto; 
+  color: #fff;
+}
+
+footer, footer table{
+    background-color: #000000;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}

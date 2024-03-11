@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend;
+  }
+
+  body {
+    background-size: cover;
+    background: linear-gradient(#000000, #000b3d);
+  }
+
+  .header{
+    text-align: center;
+    background-color: black;
+    height: 70px;
+}
+
+.navbar{
+    background: none;
+    z-index: 1;
+    width: 90%;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    position:fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-list ul li{
+    margin-left: 50px;
+}
+
+.navbar-list ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.navbar-list ul li button{
+    background: linear-gradient(112.82deg, rgb(62, 114, 245) 19.93%, rgb(101, 153, 235) 102.22%);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-transform: uppercase;
+}
+
+.navbar-list ul li button:hover{
+    transform: translateY(-5px);
+}
+
+.scroll{
+    background: black;
+    top: -100px;
+    border-radius: 20px;
+    width: 90%;
+    animation: fadedown .4s ease 1s forwards;
+}
+
+@keyframes fadedown{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+.navbar-brand{
+    cursor: pointer;
+}
+
+.navbar-brand img{
+  padding-top: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.successoutput h1{
+  font-size: 20px;
+}
+
+  .order,.result {
+    float: right;
+    width: 20%;
+    
+  }
+  .movie-container {
+    margin: 20px 0;
+  }
+  .movie-container select {
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    outline: none;
+  }
+
+  h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: left;
+    text-decoration: underline;
+    padding: 40px 0px 15px 50px;
+  }
+
+  .row {
+    display: flex;
+    color: antiquewhite;
+  }
+
+
+input[type=text],input[type=tel],select, textarea {
+  width: 100%;
+  font-size: 20px;
+  color: #000000;
+  padding: 20px;
+  border: 2px solid #0048e3;
+  border-radius: 10px;
+  background-color: white;
+ }
+
+ input[type=date]{
+  width: 50%;
+  font-size: 20px;
+  color: #000000;
+  padding: 20px;
+  border: 2px solid #0048e3;
+  border-radius: 10px;
+  background-color: white;
+ }
+
+label{
+     padding-top: 20px;
+     padding-left: 50px;
+     display: inline-block;
+}
+
+.container{
+  padding: 20px 200px;
+}
+
+.container .seat{
+  margin: 20px 2px 0px 10px;
+  width: 50px;
+  padding-left: 10px;
+  padding-right:10px;
+  text-align: center;
+}
+
+.col-25{
+  font-size: 23px;
+  float: right;
+  width: 400px;
+  margin-top:6px;
+  color: white;
+}
+
+.col-75{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+button[type=submit]{
+  background-color: #0038a8;
+  color: white;
+  padding: 12px 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:right;
+}
+
+button[type=reset]{
+  background-color: #8f0303f7;
+  color: white;
+  padding: 12px 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+button[type=checkout-btn]:hover,button[type=reset]:hover{
+  background-color: #ffffff;
+  color:black;
+}
+ /*clear floats after the columns*/
+.row:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+.table img {
+  width: 300px;
+  height: 300px;
+ border-radius: 30%;
+ }
+.table{
+  text-align: center;
+  padding: 15px;
+  color: white;
+ }
+
+table, tr, td{
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.bookingbutton{
+  align-self: center;
+}
+
+.rectangle {
+  height: 100px;
+  width: 800px;
+  margin-left: 360px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 10px #0ff; 
+}
+#table tr {
+  display: flex;
+  gap: 10px;
+}
+
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #29cdff;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background-color: #f00;
+}
+
+footer{
+    background-color: #000000;
+    color: antiquewhite;
+    height: 400px;
+}

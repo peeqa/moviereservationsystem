@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Lexend;
+    color:#fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: linear-gradient(#000000, #000b3d);
+}
+
+.header{
+    text-align: center;
+    background-color: black;
+    height: 70px;
+}
+
+.navbar{
+    background: none;
+    z-index: 1;
+    width: 90%;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    position:fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-list ul li{
+    margin-left: 50px;
+}
+
+.navbar-list ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.navbar-list ul li button{
+    background: linear-gradient(112.82deg, rgb(62, 114, 245) 19.93%, rgb(101, 153, 235) 102.22%);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-transform: uppercase;
+}
+
+.navbar-list ul li button:hover{
+    transform: translateY(-5px);
+}
+
+.scroll{
+    background: black;
+    top: -100px;
+    border-radius: 20px;
+    width: 90%;
+    animation: fadedown .4s ease 1s forwards;
+}
+
+@keyframes fadedown{
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+.navbar-brand{
+    cursor: pointer;
+}
+
+.navbar-brand img{
+    padding-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.desc td{
+    padding-left: 500px;
+    text-align: center;
+}
+
+#ss iframe{
+    height: 1000px;
+    width: 1900px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sspromo iframe{
+    height: 900px;
+    width: 1900px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#movies iframe{
+    height: 2300px;
+    width: 1895px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#movies{
+    background-image: url(images/ticketsbg3.png);
+    background-repeat: repeat;
+}
+
+#movies h2{
+    text-align: center;
+    font-family: Lexend;
+}
+
+.fnb-bar iframe{
+    height: 1000px;
+    width: 1900px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#promopreview iframe{
+    height: 750px;
+    width: 1900px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.icons table{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.icons td{
+    padding: 20px;
+    text-align: center;
+}
+
+i{
+    color: #f3f3f3;
+    font-size: larger;
+}
+
+.game iframe{
+    height: 800px;
+    width: 2000px;
+}
+
+.fnb-bar iframe{
+    height: 2000px;
+    width: 1895px;
+}
+
+.promoposters table{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.promoposters td{
+    padding: 20px;
+}
+
+.promoposters img{
+    border-radius: 50px;
+    width: 350px;
+    height: 519px;
+}
+
+.movielist table{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.movielist td{
+    padding: 20px;
+}
+
+.desc td{
+    text-align: center;
+}
+
+.movielist img{
+    border-radius: 50px;
+    width: 350px;
+    height: 519px;
+}
+
+.aboutmiru{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-family: Lexend;
+    height: 400px;
+    background-color: #1b0b02;
+    background-image: url(images/ticketsbg3.png);
+    background-repeat: repeat;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#reserve .container option{
+    color: #1b0b02;
+}
+
+footer{
+    background-color: black;
+    
+}
